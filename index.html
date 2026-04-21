@@ -1,49 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Success Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <title>7 Dias para o Sucesso</title>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao 7 Dias para o Sucesso</h1>
-        <p>Construindo hábitos que duram!</p>
+        <h1>Welcome to Financial Success</h1>
+        <p>Transform your financial future with our 7 essential lessons!</p>
     </header>
-    <main>
-        <section id="lessons">
-            <h2>Conteúdo das 7 Lições</h2>
-            <article>
-                <h3>Lição 1: Introdução</h3>
-                <p>Esta lição aborda os conceitos básicos...</p>
-            </article>
-            <article>
-                <h3>Lição 2: Planejamento</h3>
-                <p>Defina suas metas e planeje suas ações...</p>
-            </article>
-            <article>
-                <h3>Lição 3: Execução</h3>
-                <p>A importância de executar seus planos...</p>
-            </article>
-            <article>
-                <h3>Lição 4: Avaliação</h3>
-                <p>Como avaliar seu progresso...</p>
-            </article>
-            <article>
-                <h3>Lição 5: Ajustes</h3>
-                <p>Faça os ajustes necessários para avançar...</p>
-            </article>
-            <article>
-                <h3>Lição 6: Sustentação</h3>
-                <p>Mantenha seus novos hábitos...</p>
-            </article>
-            <article>
-                <h3>Lição 7: Mensuração</h3>
-                <p>Como medir seu sucesso no longo prazo...</p>
-            </article>
-        </section>
-    </main>
-    <script src="script.js"></script>
+
+    <section id="lessons">
+        <h2>7 Financial Lessons</h2>
+        <ul>
+            <li>Lesson 1: Understanding Budgeting</li>
+            <li>Lesson 2: Investing Basics</li>
+            <li>Lesson 3: Saving Strategies</li>
+            <li>Lesson 4: Debt Management</li>
+            <li>Lesson 5: Retirement Planning</li>
+            <li>Lesson 6: Building Wealth</li>
+            <li>Lesson 7: Financial Independence</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Special Pricing Offer</h2>
+        <p>Enroll today for just $99!</p>
+    </section>
+
+    <section id="countdown">
+        <h2>Countdown Timer</h2>
+        <div id="timer">01:00:00</div>
+    </section>
+
+    <section id="comparison">
+        <h2>Comparison: Rich vs. Poor</h2>
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>Rich</th>
+                <th>Poor</th>
+            </tr>
+            <tr>
+                <td>Saving Habit</td>
+                <td>Consistently saves 20%</td>
+                <td>Saves sporadically</td>
+            </tr>
+            <tr>
+                <td>Investment Knowledge</td>
+                <td>Informed investor</td>
+                <td>Relies on others</td>
+            </tr>
+            <tr>
+                <td>Debt Management</td>
+                <td>Avoids unnecessary debt</td>
+                <td>Often in debt</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="problems">
+        <h2>Common Financial Problems</h2>
+        <p>Many people face issues like high debt, insufficient savings, and lack of investment knowledge.</p>
+    </section>
+
+    <section id="lessons-modal">
+        <h2>Lesson Modal Functionality</h2>
+        <button id="openModal">Learn More</button>
+        <div id="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Details about the lesson will go here.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
