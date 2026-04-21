@@ -1,0 +1,97 @@
+.header {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  background: url('hero-image.jpg') no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.pricing {
+  background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+  padding: 20px;
+  color: white;
+}
+
+.countdown {
+  font-size: 2em;
+  color: #ff5733;
+  text-align: center;
+}
+
+.rich-poor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.rich-poor-table th, .rich-poor-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.problem-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.problem-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 15px;
+  flex: 1 1 300px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .lessons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.button:hover {
+  background-color: #575757;
+  transition: background-color 0.3s ease-in-out;
+}
