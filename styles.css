@@ -95,3 +95,427 @@
   background-color: #575757;
   transition: background-color 0.3s ease-in-out;
 }
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.3em;
+    opacity: 0.95;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background: white;
+    color: #667eea;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* COUNTDOWN */
+.countdown-section {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.timer-display {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* LESSONS */
+.lessons-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+}
+
+.lessons-container h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.lesson-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.lesson-number {
+    background: #667eea;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lesson-card h3 {
+    color: #667eea;
+    margin: 15px 0;
+}
+
+.lesson-card button {
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.lesson-card button:hover {
+    background: #764ba2;
+}
+
+/* PROBLEMS */
+.problems-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+}
+
+.problems-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.problem-card {
+    background: #fff3cd;
+    border-left: 5px solid #ff9800;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.problem-card h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+/* COMPARISON */
+.comparison-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+}
+
+.comparison-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comparison-table th {
+    background: #667eea;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.comparison-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comparison-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+    background: #f0f0ff;
+}
+
+/* PRICING */
+.pricing-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.pricing-card {
+    background: white;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.pricing-card h3 {
+    color: #667eea;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.price-display {
+    margin: 25px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+.new-price {
+    color: #10b981;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.discount {
+    background: #ff4444;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.features {
+    list-style: none;
+    text-align: left;
+    margin: 25px 0;
+}
+
+.features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+.buy-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.buy-button:hover {
+    transform: scale(1.02);
+}
+
+.guarantee {
+    background: #f0fdf4;
+    color: #10b981;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* PICPAY MODAL */
+.picpay-modal h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.picpay-link-section,
+.manual-pix-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.picpay-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.picpay-btn:hover {
+    transform: scale(1.02);
+}
+
+.pix-key-box {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ddd;
+}
+
+.copy-btn {
+    background: #10b981;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.copy-btn:hover {
+    background: #059669;
+}
+
+.payment-instructions {
+    background: #f0f9ff;
+    padding: 15px;
+    border-left: 4px solid #667eea;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.payment-instructions h4 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .lesson-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timer-display {
+        font-size: 2em;
+    }
+}
