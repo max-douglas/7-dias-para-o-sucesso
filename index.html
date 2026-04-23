@@ -1,82 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Success Landing Page</title>
+    <title>7 Dias para o Sucesso Financeiro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Financial Success</h1>
-        <p>Transform your financial future with our 7 essential lessons!</p>
+    <!-- HEADER / HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>🚀 7 Dias Para o Sucesso Financeiro</h1>
+            <p class="subtitle">Transforme sua relação com dinheiro e conquiste a liberdade financeira</p>
+            <button class="cta-button" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})">
+                Começar Agora Por Apenas R$9,99
+            </button>
+        </div>
     </header>
 
-    <section id="lessons">
-        <h2>7 Financial Lessons</h2>
-        <ul>
-            <li>Lesson 1: Understanding Budgeting</li>
-            <li>Lesson 2: Investing Basics</li>
-            <li>Lesson 3: Saving Strategies</li>
-            <li>Lesson 4: Debt Management</li>
-            <li>Lesson 5: Retirement Planning</li>
-            <li>Lesson 6: Building Wealth</li>
-            <li>Lesson 7: Financial Independence</li>
-        </ul>
+    <!-- COUNTDOWN TIMER -->
+    <section class="countdown-section">
+        <h2>⏰ Oferta Limitada!</h2>
+        <p>Desconto de 89% por apenas:</p>
+        <div class="timer-display">
+            <span id="timer">48:00:00</span>
+        </div>
     </section>
 
-    <section id="pricing">
-        <h2>Special Pricing Offer</h2>
-        <p>Enroll today for just $99!</p>
-    </section>
+    <!-- 7 LESSONS -->
+    <section class="lessons-container">
+        <h2>📚 As 7 Aulas</h2>
+        
+        <div class="lesson-grid">
+            <div class="lesson-card" onclick="openLesson(1)">
+                <div class="lesson-number">Dia 1</div>
+                <h3>O Despertar Financeiro</h3>
+                <p>Diagnóstico real da sua situação e os 4 pilares da riqueza</p>
+                <button>Ver Aula →</button>
+            </div>
 
-    <section id="countdown">
-        <h2>Countdown Timer</h2>
-        <div id="timer">01:00:00</div>
-    </section>
+            <div class="lesson-card" onclick="openLesson(2)">
+                <div class="lesson-number">Dia 2</div>
+                <h3>A Mentalidade do Rico</h3>
+                <p>7 diferenças fundamentais entre rico e pobre</p>
+                <button>Ver Aula →</button>
+            </div>
 
-    <section id="comparison">
-        <h2>Comparison: Rich vs. Poor</h2>
-        <table>
-            <tr>
-                <th>Aspect</th>
-                <th>Rich</th>
-                <th>Poor</th>
-            </tr>
-            <tr>
-                <td>Saving Habit</td>
-                <td>Consistently saves 20%</td>
-                <td>Saves sporadically</td>
-            </tr>
-            <tr>
-                <td>Investment Knowledge</td>
-                <td>Informed investor</td>
-                <td>Relies on others</td>
-            </tr>
-            <tr>
-                <td>Debt Management</td>
-                <td>Avoids unnecessary debt</td>
-                <td>Often in debt</td>
-            </tr>
-        </table>
-    </section>
+            <div class="lesson-card" onclick="openLesson(3)">
+                <div class="lesson-number">Dia 3</div>
+                <h3>Os Segredos do Dinheiro</h3>
+                <p>Como o dinheiro realmente funciona e se multiplica</p>
+                <button>Ver Aula →</button>
+            </div>
 
-    <section id="problems">
-        <h2>Common Financial Problems</h2>
-        <p>Many people face issues like high debt, insufficient savings, and lack of investment knowledge.</p>
-    </section>
+            <div class="lesson-card" onclick="openLesson(4)">
+                <div class="lesson-number">Dia 4</div>
+                <h3>Planejamento Financeiro</h3>
+                <p>Método 50-30-20 e seu orçamento realista</p>
+                <button>Ver Aula →</button>
+            </div>
 
-    <section id="lessons-modal">
-        <h2>Lesson Modal Functionality</h2>
-        <button id="openModal">Learn More</button>
-        <div id="modal" style="display:none;">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Details about the lesson will go here.</p>
+            <div class="lesson-card" onclick="openLesson(5)">
+                <div class="lesson-number">Dia 5</div>
+                <h3>Gerando Renda Extra</h3>
+                <p>10 formas práticas de ganhar dinheiro extra</p>
+                <button>Ver Aula →</button>
+            </div>
+
+            <div class="lesson-card" onclick="openLesson(6)">
+                <div class="lesson-number">Dia 6</div>
+                <h3>Investimentos Inteligentes</h3>
+                <p>Onde investir com segurança e alto rendimento</p>
+                <button>Ver Aula →</button>
+            </div>
+
+            <div class="lesson-card" onclick="openLesson(7)">
+                <div class="lesson-number">Dia 7</div>
+                <h3>Construindo Seu Império</h3>
+                <p>Plano de 10 anos para seu primeiro milhão</p>
+                <button>Ver Aula →</button>
             </div>
         </div>
     </section>
 
-    <script src="scripts.js"></script>
+    <!-- PROBLEMS SECTION -->
+    <section class="problems-section">
+        <h2>❌ O Que Impede Você de Ficar Rico?</h2>
+        <div class="problems-grid">
+            <div class="problem-card">
+                <h3>1. Mentalidade de Escassez</h3>
+                <p>Você acredita que não há dinheiro suficiente para todos. Isso o faz gastar tudo que tem.</p>
+            </div>
+            <div class="problem-card">
+                <h3>2. Falta de Educação Financeira</h3>
+                <p>Nunca lhe ensinaram sobre investimentos, juros compostos e como o dinheiro funciona.</p>
+            </div>
+            <div class="problem-card">
+                <h3>3. Dívidas Não Controladas</h3>
+                <p>Cartão de crédito, empréstimos pessoais drenam sua renda antes de você investir.</p>
+            </div>
+            <div class="problem-card">
+                <h3>4. Falta de Planejamento</h3>
+                <p>Você gasta porque não tem um plano. Sem plano, não há direção.</p>
+            </div>
+            <div class="problem-card">
+                <h3>5. Comparação com Outros</h3>
+                <p>Você compra coisas que não precisa para impressionar pessoas que não importa.</p>
+            </div>
+            <div class="problem-card">
+                <h3>6. Uma Única Fonte de Renda</h3>
+                <p>Você depende de um emprego. Ricos têm 7+ fontes de renda passiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="comparison-section">
+        <h2>💰 Rico vs Pobre: As 7 Diferenças</h2>
+        <table class="comparison-table">
+            <tr>
+                <th>Aspecto</th>
+                <th>Pobre 😞</th>
+                <th>Rico 😊</th>
+            </tr>
+            <tr>
+                <td><strong>Visão</strong></td>
+                <td>Vê obstáculos</td>
+                <td>Vê oportunidades</td>
+            </tr>
+            <tr>
+                <td><strong>Mentalidade</strong></td>
+                <td>Pensa em divisão</td>
+                <td>Pensa em multiplicação</td>
+            </tr>
+            <tr>
+                <td><strong>Risco</strong></td>
+                <td>Evita (medo)</td>
+                <td>Calcula e toma</td>
+            </tr>
+            <tr>
+                <td><strong>Educação</strong></td>
+                <td>Gasta com coisas</td>
+                <td>Investe em conhecimento</td>
+            </tr>
+            <tr>
+                <td><strong>Tempo</strong></td>
+                <td>Pensa em 30 dias</td>
+                <td>Pensa em 30 anos</td>
+            </tr>
+            <tr>
+                <td><strong>Ação</strong></td>
+                <td>Analisa infinitamente</td>
+                <td>Testa e aprende</td>
+            </tr>
+            <tr>
+                <td><strong>Comunidade</strong></td>
+                <td>Anda com pobres</td>
+                <td>Anda com ricos</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- PRICING SECTION WITH PICPAY -->
+    <section id="pricing" class="pricing-section">
+        <h2>💳 Oferta Especial - Por Tempo Limitado!</h2>
+        <div class="pricing-card">
+            <h3>Curso Completo: 7 Dias para o Sucesso</h3>
+            <div class="price-display">
+                <span class="old-price">R$ 97,00</span>
+                <span class="new-price">R$ 9,99</span>
+                <span class="discount">-89%</span>
+            </div>
+            <ul class="features">
+                <li>✅ 7 aulas completas em vídeo</li>
+                <li>✅ Planilha de orçamento gratuita</li>
+                <li>✅ Lista de 10 ideias de renda extra</li>
+                <li>✅ Acesso vitalício ao conteúdo</li>
+                <li>✅ Comunidade exclusiva</li>
+                <li>✅ Garantia: 7 dias de reembolso</li>
+            </ul>
+            
+            <!-- PICPAY PAYMENT BUTTON -->
+            <div class="payment-container">
+                <button class="buy-button" onclick="openPicPayModal()">
+                    💳 Comprar com PIX - R$9,99
+                </button>
+                <p class="payment-info">Pagamento seguro via PicPay</p>
+            </div>
+            
+            <p class="guarantee">✅ 7 Dias de Garantia de Satisfação ou Seu Dinheiro De Volta</p>
+        </div>
+    </section>
+
+    <!-- PICPAY PAYMENT MODAL -->
+    <div id="picpayModal" class="modal">
+        <div class="modal-content picpay-modal">
+            <span class="close" onclick="closePicPayModal()">&times;</span>
+            <h2>💳 Pagamento via PIX - PicPay</h2>
+            
+            <div class="picpay-info">
+                <p><strong>Valor:</strong> R$ 9,99</p>
+                <p><strong>Produto:</strong> 7 Dias para o Sucesso</p>
+                
+                <!-- PICPAY LINK SECTION -->
+                <div class="picpay-link-section">
+                    <h3>1️⃣ Pagar com PicPay (Recomendado)</h3>
+                    <button class="picpay-btn" onclick="payWithPicPay()">
+                        🔗 Ir para PicPay
+                    </button>
+                </div>
+
+                <!-- MANUAL PIX SECTION -->
+                <div class="manual-pix-section">
+                    <h3>2️⃣ PIX Manual</h3>
+                    <p>Copie a chave PIX e transfira R$9,99:</p>
+                    <div class="pix-key-box">
+                        <code id="pixKey">maxdoff5@gmail.com</code>
+                        <button class="copy-btn" onclick="copyPixKey()">
+                            📋 Copiar Chave
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PAYMENT INSTRUCTIONS -->
+                <div class="payment-instructions">
+                    <h4>Como funciona:</h4>
+                    <ol>
+                        <li>Clique no botão "Ir para PicPay"</li>
+                        <li>Você será redirecionado para o PicPay</li>
+                        <li>Confirme o pagamento de R$9,99 via PIX</li>
+                        <li>Após confirmar, você receberá acesso imediato</li>
+                        <li>Um email com os dados de acesso será enviado</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FOR LESSONS -->
+    <div id="lessonModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLesson()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 7 Dias para o Sucesso | Construindo Riqueza Juntos</p>
+        <p>Este é um produto educacional. Resultados não são garantidos.</p>
+        <p>Contato: maxdoff5@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
